@@ -1,0 +1,25 @@
+{% extends 'weather_api/base.html' %}
+
+
+{% block content %}
+    <section class="section">
+        <div class="container">
+            <div class="columns">
+                <div class="column is-offset-4 is-4">
+                    <form method="GET">
+                        <div class="field has-addons">
+                            <div class="control is-expanded">
+                                <input type="text" name="city_name" class="input" placeholder="City Name"/>
+                            </div>
+                            <div class="control">
+                                <button type="submit" class="button is-info">
+                                    Click
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock content %}
